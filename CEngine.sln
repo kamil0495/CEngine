@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmdEdit", "BmdEdit\BmdEdit.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNengine", "CNengine\CNengine.csproj", "{1F34F08F-F931-45D0-B989-90C28AAF5BFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cultures2-gl port", "cultures2-gl port\cultures2-gl port.csproj", "{3703DD8B-1975-46F2-BC61-403A7BF2A769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1F34F08F-F931-45D0-B989-90C28AAF5BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F34F08F-F931-45D0-B989-90C28AAF5BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F34F08F-F931-45D0-B989-90C28AAF5BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3703DD8B-1975-46F2-BC61-403A7BF2A769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3703DD8B-1975-46F2-BC61-403A7BF2A769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3703DD8B-1975-46F2-BC61-403A7BF2A769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3703DD8B-1975-46F2-BC61-403A7BF2A769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
