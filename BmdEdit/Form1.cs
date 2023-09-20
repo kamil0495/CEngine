@@ -378,5 +378,46 @@ namespace BmdEdit
                 }
             }
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog theDialog = new OpenFileDialog();
+            theDialog.Title = "Otówrz pliki png";
+            theDialog.Filter = "PNG files|*.png";
+            theDialog.Multiselect = true;
+            //theDialog.InitialDirectory = @"C:\";
+            if (theDialog.ShowDialog() == DialogResult.OK)
+            {
+                foreach(string FileName in theDialog.FileNames)
+                {
+                    try
+                    {
+
+                        BMDImage bi = new BMDImage
+                        {
+                            Bitmap = new Bitmap(Image.FromFile(FileName)),
+                            x = 0,
+                            y = 0,
+                            Number = listBox1.Items.Count + 1,
+                            Type = 4
+                        };
+                        bi.GeneratePixels(GetPalletes());
+                        bi.GenerateBitmap(GetPalletes(), checkBox1.Checked);
+                        file.semiFile.frames.Add(bi);
+                        listBox1.SelectedIndex = listBox1.Items.Add(bi);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

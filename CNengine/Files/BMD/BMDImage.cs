@@ -269,7 +269,7 @@ namespace CEngine.Files.BMD
 
         private int closestColor2(List<Color> colors, Color target)
         {
-            var colorDiffs = colors.Select(n => ColorDiff(n, target)).Min(n => n);
+            var colorDiffs = colors.Select(n => ColorDiff(n, target)).Min();
             return colors.FindIndex(n => ColorDiff(n, target) == colorDiffs);
         }
 
